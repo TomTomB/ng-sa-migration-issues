@@ -3,7 +3,7 @@ import { TestComponent } from './components';
 import { TestDirective } from './directives';
 
 @NgModule({
-  declarations: [TestComponent, TestDirective],
-  exports: [TestComponent, TestDirective],
+    imports: [TestComponent, TestDirective],
+    exports: [TestComponent, TestDirective]
 })
 export class MyLibModule {}

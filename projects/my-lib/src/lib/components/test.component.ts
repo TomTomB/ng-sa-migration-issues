@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { TestDirective } from '../directives/test.directive';
 
 @Component({
     selector: 'app-test',
-    template: `
-        <p>Test</p>
-    `
+    template: ` <p app-test>Test</p> `,
+    standalone: true,
+    imports: [TestDirective]
 })
 export class TestComponent implements OnInit {
-    constructor() { }
+  constructor() {}
 
-    ngOnInit(): void { }
+  ngOnInit(): void {}
 }
